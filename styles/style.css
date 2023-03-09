@@ -1,0 +1,115 @@
+:root {
+    --font01: 'Poppins', sans-serif;
+    --color01: #7D7FC6;
+    --color02: #BED0FC;
+    --color03: #F0F9FE;
+    --color04: #C4EBE7;
+    --color06: #74C4C0;
+    /* texto */
+    --color07: #E2E3FF;
+    --color08: #283659;
+    --color09: #344752;
+    --color10: #2C4854;
+    --color11: #F0F9FE;
+
+    /* sombras */
+    --color12: #2c485488;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color04);
+    font-family: var(--font01);
+}
+
+.home {
+    background-color: var(--color06);
+    padding: 20px 0 0 20px;
+    height: 20vh;
+}
+
+.bgdiv { 
+    width: 100vw;
+    height: 100px;
+    z-index: -10;
+}
+
+.span-right {
+    display: block;
+    text-align: right;
+    font-size: 5rem;
+    padding-right: 10px;
+    color: var(--color01);
+}
+
+.light {
+    background-color: var(--color04);
+}
+
+.dark {
+    background-color: var(--color06);
+}
+
+.triangle-up-left {
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.triangle-down-left {
+    clip-path: polygon(0 0, 0 80%, 100% 0);
+}
+.triangle-up-right {
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+}
+
+.triangle-down-right {
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color11);
+    text-shadow: 2px 2px 1px var(--color12);
+}
+
+.subtitle{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--color10);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.day{
+    height: 20vh;
+}
+
+.month {
+    height: 20vh;
+}
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+li {
+    list-style: none;
+}
