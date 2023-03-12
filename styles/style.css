@@ -19,7 +19,10 @@
 * {
     padding: 0;
     margin: 0;
+    border: 0px solid blue;
     box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
 }
 
 body {
@@ -29,22 +32,121 @@ body {
 
 .home {
     background-color: var(--color06);
-    padding: 20px 0 0 20px;
-    height: 20vh;
+    padding: 40px 0 0 20px;
+    height: 180px;
+}
+
+.day{
+    height: 180px;
+}
+
+.month {
+    height: 180px;
 }
 
 .bgdiv { 
+    position: relative;
     width: 100vw;
-    height: 100px;
-    z-index: -10;
+    height: 90px;
 }
 
-.span-right {
-    display: block;
-    text-align: right;
-    font-size: 5rem;
+.title {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: var(--color11);
+    text-shadow: 2px 2px 1px var(--color12);
+}
+
+.subtitle{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--color10);
+}
+
+.title-h3 {
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 19px;
+}
+
+.svg-right {
+    position: absolute;
+    right: 0px;
+    z-index: 10;
     padding-right: 10px;
-    color: var(--color01);
+}
+
+.svg-left {
+    position: absolute;
+    left: 0px;
+    z-index: 10;
+    padding-left: 10px;
+}
+
+.photos {
+    top: 150px;
+    padding-left: 0;
+}
+
+.calendar {
+    top: 220px;
+    padding-right: 40px;
+}
+
+.pens {
+    top: 380px;
+}
+
+.clock {
+    top: 500px;
+}
+
+.books {
+    top: 710px;
+}
+
+.live {
+    top: 965px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.shelf {
+    top: 1190px;
+}
+
+.laptop {
+    top: 1320px;
+    padding-left: 20px;
+}
+
+.computer {
+    top: 1620px;
+}
+
+.notebook {
+    top: 1510px;
+    padding-left: 20px;
+}
+
+.time {
+    top: 1820px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.porftolio {
+    top: 2000px;
+}
+
+.project {
+    top: 2220px;
+}
+
+.flower {
+    top: 2470px;
 }
 
 .light {
@@ -57,51 +159,41 @@ body {
 
 .triangle-up-left {
     clip-path: polygon(0 0, 0 100%, 100% 100%);
+    /* position: relative; */
+    top: 1px;
 }
 
 .triangle-down-left {
     clip-path: polygon(0 0, 0 80%, 100% 0);
+    position: relative;
+    bottom: 1px;
 }
+
 .triangle-up-right {
     clip-path: polygon(100% 100%, 0 100%, 100% 0);
+    position: relative;
+    top: 1px;
 }
 
 .triangle-down-right {
     clip-path: polygon(100% 0, 0 0, 100% 100%);
-}
-
-.title {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--color11);
-    text-shadow: 2px 2px 1px var(--color12);
-}
-
-.subtitle{
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: var(--color10);
+    position: relative;
+    bottom: 1px;
 }
 
 .flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
+    padding-right: 20px;
 }
 .flex-reverse {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 20px;
 }
 
-.day{
-    height: 20vh;
-}
-
-.month {
-    height: 20vh;
-}
 .right {
     text-align: right;
 }
@@ -110,6 +202,25 @@ body {
     text-align: left;
 }
 
-li {
-    list-style: none;
-}
+
+/* @media screen and (min-width: 768px){
+    main {
+        width: 500px;
+        background-color: var(--color03);
+        margin: 0 auto;
+    }
+    .svg-right {
+        position: absolute;
+        right: 220px;
+        z-index: 10;
+        padding-right: 10px;
+    }
+    
+    .svg-left {
+        position: absolute;
+        left: 220px;
+        z-index: 10;
+        padding-left: 10px;
+    }
+    
+} */
