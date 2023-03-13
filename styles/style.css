@@ -26,8 +26,12 @@
 body {
     font-family: var(--font01);
     background-color: var(--color01);
-    width: 100vw;
+
 }
+/* .main {
+    width: 500px;
+    margin: 0 auto;
+} */
 
 .card {
     background-color: var(--color04);
@@ -63,7 +67,7 @@ body {
 }
 
 .title {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 800;
     color: var(--color11);
     text-shadow: 2px 2px 1px var(--color12);
@@ -86,11 +90,13 @@ body {
 }
 
 .text {
-    font-size: 17px;
+    font-size: 13px;
     width: 250px;
     color: var(--color08);
 }
-
+.text-container {
+    width: 250px;
+}
 .svg-right {
     width:120px;
     height:160px;
@@ -230,4 +236,9 @@ body {
 .end {
     height: 20px;
     width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--color06);
 }
