@@ -32,7 +32,8 @@ body {
 .card {
     background-color: var(--color04);
     width: min(100%, 500px);
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
+    box-shadow: 1px 0px 8px 8px #0000004a;
 }
 
 .home {
@@ -75,14 +76,19 @@ body {
 }
 
 .title-h3 {
+    font-size: 1.2rem;
     margin-bottom: 10px;
-    color: var(--color09)
+    color: var(--color11)
+}
+
+.title-h4 {
+    color: var(--color09);
 }
 
 .text {
-    font-size: 19px;
+    font-size: 17px;
     width: 250px;
-    color: var(--color08)
+    color: var(--color08);
 }
 
 .svg-right {
@@ -221,19 +227,7 @@ body {
     text-align: left;
 }
 
-
-@media screen and (min-width: 768px){
-    main {
-        width: 500px;
-        margin: 0 auto;
-    }
-    .svg-right {
-        width:140px;
-        height:210px;
-    }
-    
-    .svg-left {
-        width:140px;
-        height:210px;
-    }
+.end {
+    height: 20px;
+    width: 100%;
 }
