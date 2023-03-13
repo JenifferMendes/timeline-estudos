@@ -1,16 +1,16 @@
 :root {
     --font01: 'Poppins', sans-serif;
-    --color01: #7D7FC6;
+    --color01: #8F7D6B;
     --color02: #BED0FC;
     --color03: #F0F9FE;
-    --color04: #C4EBE7;
-    --color06: #74C4C0;
+    --color04: #EDE7E2;
+    --color06: #DBCBBB;
     /* texto */
     --color07: #E2E3FF;
-    --color08: #283659;
-    --color09: #344752;
-    --color10: #2C4854;
-    --color11: #F0F9FE;
+    --color08: #393536;
+    --color09: #3B261F;
+    --color10: #866255;
+    --color11: #637A73;
 
     /* sombras */
     --color12: #2c485488;
@@ -19,59 +19,75 @@
 * {
     padding: 0;
     margin: 0;
-    border: 0px solid blue;
-    box-sizing: border-box;
     box-sizing: border-box;
     border: none;
 }
 
 body {
-    background-color: var(--color04);
     font-family: var(--font01);
+    background-color: var(--color01);
+    width: 100vw;
+}
+
+.card {
+    background-color: var(--color04);
+    width: min(100%, 500px);
+    margin: 0 auto;
 }
 
 .home {
+    position: relative;
     background-color: var(--color06);
     padding: 40px 0 0 20px;
     height: 180px;
+    width: 100%;
 }
 
 .day{
+    position: relative;
     height: 180px;
+    width: 100%;
 }
 
 .month {
+    position: relative;
     height: 180px;
+    width: 100%;
 }
 
 .bgdiv { 
     position: relative;
-    width: 100vw;
-    height: 90px;
+    width: 100%;
+    height: 100px;
 }
 
 .title {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     font-weight: 800;
     color: var(--color11);
     text-shadow: 2px 2px 1px var(--color12);
 }
 
 .subtitle{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 900;
     color: var(--color10);
 }
 
 .title-h3 {
     margin-bottom: 10px;
+    color: var(--color09)
 }
 
 .text {
     font-size: 19px;
+    width: 250px;
+    color: var(--color08)
 }
 
 .svg-right {
+    width:120px;
+    height:160px;
     position: absolute;
     right: 0px;
     z-index: 10;
@@ -79,74 +95,77 @@ body {
 }
 
 .svg-left {
+    width:120px;
+    height:160px;
     position: absolute;
     left: 0px;
     z-index: 10;
     padding-left: 10px;
 }
 
+.middle-transform {
+    left: 50%;
+    transform: translate(-50%);
+}
+
 .photos {
-    top: 150px;
+    bottom: -80px;
     padding-left: 0;
 }
 
 .calendar {
-    top: 220px;
-    padding-right: 40px;
+    top: -80px;
 }
 
 .pens {
-    top: 380px;
+    top: 100px;
+    padding-left: 0;
 }
 
 .clock {
-    top: 500px;
+    top: -80px;
 }
 
 .books {
-    top: 710px;
+    top: -40px;
 }
 
 .live {
-    top: 965px;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.shelf {
-    top: 1190px;
-}
-
-.laptop {
-    top: 1320px;
-    padding-left: 20px;
+    top: -120px;
+    padding-right: 0;
 }
 
 .computer {
-    top: 1620px;
+    top: -50px;
+}
+
+.shelf {
+    top: 110px;
+}
+
+.laptop {
+    top: -70px;
 }
 
 .notebook {
-    top: 1510px;
-    padding-left: 20px;
+    top: 140px;
 }
 
 .time {
-    top: 1820px;
-    left: 50%;
-    transform: translate(-50%);
+    top: -130px;
+    padding-right: 0;
 }
 
 .porftolio {
-    top: 2000px;
+    top: 120px;
 }
 
 .project {
-    top: 2220px;
+    top: 90px;
 }
 
 .flower {
-    top: 2470px;
+    top: 80px;
 }
 
 .light {
@@ -159,7 +178,7 @@ body {
 
 .triangle-up-left {
     clip-path: polygon(0 0, 0 100%, 100% 100%);
-    /* position: relative; */
+    position: relative;
     top: 1px;
 }
 
@@ -203,24 +222,18 @@ body {
 }
 
 
-/* @media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
     main {
         width: 500px;
-        background-color: var(--color03);
         margin: 0 auto;
     }
     .svg-right {
-        position: absolute;
-        right: 220px;
-        z-index: 10;
-        padding-right: 10px;
+        width:140px;
+        height:210px;
     }
     
     .svg-left {
-        position: absolute;
-        left: 220px;
-        z-index: 10;
-        padding-left: 10px;
+        width:140px;
+        height:210px;
     }
-    
-} */
+}
