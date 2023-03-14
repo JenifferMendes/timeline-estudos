@@ -100,6 +100,28 @@ body {
 .text-container {
     width: 250px;
 }
+
+.links {
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+}
+
+.links:hover {
+    color: var(--color11);
+    text-decoration: underline;
+}
+
+.icon {
+    font-size: 2rem;
+    color: var(--color11);
+    margin-top: 5px;
+    transition: transform 0.5s ease-out;
+}
+
+.icon:hover{
+    transform: scale(1.1);
+}
+
 .svg-right {
     width:120px;
     height:160px;
