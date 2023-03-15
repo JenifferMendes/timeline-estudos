@@ -1,0 +1,81 @@
+.svg-right {
+    width:120px;
+    height:160px;
+    position: absolute;
+    right: 0px;
+    z-index: 10;
+    padding-right: 10px;
+}
+
+.svg-left {
+    width:120px;
+    height:160px;
+    position: absolute;
+    left: 0px;
+    z-index: 10;
+    padding-left: 10px;
+}
+
+.photos {
+    width: 180px;
+    bottom: -80px;
+    padding-left: 0;
+    transform: rotate(-10deg);
+}
+
+.calendar {
+    top: -80px;
+}
+
+.pens {
+    top: 100px;
+    padding-left: 0;
+}
+
+.clock {
+    top: -40px;
+}
+
+.books {
+    top: -40px;
+}
+
+.live {
+    top: -120px;
+    padding-right: 0;
+}
+
+.laptop {
+    top: -60px;
+}
+
+.computer {
+    top: -40px;
+}
+
+.shelf {
+    top: 110px;
+}
+
+.notebook {
+    top: 140px;
+}
+
+.time {
+    top: -130px;
+    padding-right: 0;
+}
+
+.porftolio {
+    top: 140px;
+}
+
+.project {
+    width: 200px;
+    top: 90px;
+}
+
+.flower {
+    height: 200px;
+    top: 80px;
+}

@@ -1,0 +1,30 @@
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 20px;
+    }
+
+    .text-container {
+        width: 350px;
+    }
+
+    .text {
+        width: 350px;
+        font-size: 20px;
+    }
+
+    .photos {
+        width: 260px;
+        bottom: -100px;
+    }
+
+    .computer {
+        width: 200px;
+        top: -40px;
+    }
+
+    .porftolio {
+        width: 200px;
+        top: 90px;
+    }
+
+} 
