@@ -50,13 +50,13 @@ body {
 
 .day{
     position: relative;
-    height: 180px;
+    height: 200px;
     width: 100%;
 }
 
 .month {
     position: relative;
-    height: 180px;
+    height: 200px;
     width: 100%;
 }
 
@@ -196,8 +196,7 @@ body {
 }
 
 .porftolio {
-    width: 200px;
-    top: 90px;
+    top: 140px;
 }
 
 .project {
@@ -299,6 +298,11 @@ footer > a {
     .computer {
         width: 200px;
         top: -40px;
+    }
+
+    .porftolio {
+        width: 200px;
+        top: 90px;
     }
 
 } 
