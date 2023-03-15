@@ -273,6 +273,10 @@ footer {
     background-color: var(--color06);
 }
 
+footer > a {
+    color: var(--color09);
+}
+
 @media screen and (min-width: 768px) {
     html {
         font-size: 20px;
